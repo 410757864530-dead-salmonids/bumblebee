@@ -10,7 +10,8 @@ module Bot::Hugs
   include Constants
 
   # Give a hug to a user
-  command :hug do |event, *args|
+  command :hug, description: 'Gives a hug to a user.',
+                usage: '+hug <user>' do |event, *args|
     # Break unless given user is valid and is not event user
     break unless (user = SERVER.get_user(args.join(' '))) &&
                  user.id != event.user.id
@@ -32,7 +33,7 @@ module Bot::Hugs
         false, # tts
         {
             author: {
-                name:     "#{pl(hugging_user.given, 'hugs')} given - #{pl(hugging_user.received, 'hug')} received",
+                name:     "#{pl(hugging_user.given, 'hugs')} given - #{pl(hugging_user.received, 'hugs')} received",
                 icon_url: event.user.avatar_url
             },
             color: 0xFFD700
