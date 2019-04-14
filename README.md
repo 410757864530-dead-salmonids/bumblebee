@@ -8,3 +8,4 @@ Built using Ruby, [discordrb](https://github.com/meew0/discordrb) and the
 Current functionality:
 + Hugs
 + Bee facts
++ Bee dab
