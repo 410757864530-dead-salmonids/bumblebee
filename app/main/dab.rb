@@ -9,7 +9,7 @@ module Bot::Dab
   command :dab, description: 'Displays a dabbing bee.',
                 usage: '+dab' do |event|
     event.send_embed do |embed|
-      embed.image = {url: 'https://image.spreadshirtmedia.com/image-server/v1/mp/compositions/T486A1MPA902PT17X44Y37D1017102443FS919/views/1,width=500,height=500,appearanceId=1,backgroundColor=FFFFFF,noPt=true,version=1452149155/dabbing-dab-bee-kids-long-sleeve-t-shirt.jpg'}
+      embed.image = {url: 'http://i64.tinypic.com/10y2qdj.jpg'}
     end
   end
 end
